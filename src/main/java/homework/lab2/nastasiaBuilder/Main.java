@@ -1,4 +1,4 @@
-package nastasiaBuilder;
+package homework.lab2.nastasiaBuilder;
 /*
 * builder for client
 * */

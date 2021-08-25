@@ -1,4 +1,4 @@
-package nastasiaBuilder;
+package homework.lab2.nastasiaBuilder;
 
 import lombok.ToString;
 
