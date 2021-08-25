@@ -1,4 +1,4 @@
-package homework.lab1;
+package homework.lab1.lab1_2;
 
 /**
  * @author Evgeny Borisov
