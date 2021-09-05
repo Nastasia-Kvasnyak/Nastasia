@@ -2,14 +2,6 @@ package homework.radio_alarm;
 
 public class RadioAlarm {
 
-    public static void main(String[] args) {
-        RadioAlarm radioAlarm = new RadioAlarm();
-        radioAlarm.a();
-        radioAlarm.b();
-        radioAlarm.c();
-        radioAlarm.d();
-    }
-
     public void a(){
         RadioImpl radio = new RadioImpl();
         radio.a();
@@ -26,4 +18,13 @@ public class RadioAlarm {
         AlarmImpl alarm = new AlarmImpl();
         alarm.d();
     }
+
+    public static void main(String[] args) {
+        RadioAlarm radioAlarm = new RadioAlarm();
+        radioAlarm.a();
+        radioAlarm.b();
+        radioAlarm.c();
+        radioAlarm.d();
+    }
+
 }
