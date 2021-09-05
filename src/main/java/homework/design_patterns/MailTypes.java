@@ -1,4 +1,4 @@
-package design_patterns_nastasia;
+package homework.design_patterns;
 
 public enum MailTypes {
     WELCOME(1,new HandlerType1()),BIRTHDAY(2,new HandlerType2());
@@ -16,9 +16,10 @@ public enum MailTypes {
         for (MailTypes value : MailTypes.values()) {
             if (mailInfo.getMailType()== value.mailType){
                 value.mailHandler.handle(mailInfo);
-        }
+            }
 //            throw new IllegalStateException(" No such type");
-    }
+        }
     }
 
 }
+

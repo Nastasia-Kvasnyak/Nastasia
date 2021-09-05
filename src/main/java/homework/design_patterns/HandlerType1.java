@@ -1,4 +1,4 @@
-package design_patterns_nastasia;
+package homework.design_patterns;
 
 public class HandlerType1 implements MailHandler {
     @Override

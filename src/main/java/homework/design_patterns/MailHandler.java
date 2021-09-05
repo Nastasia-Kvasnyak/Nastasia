@@ -1,4 +1,4 @@
-package design_patterns_nastasia;
+package homework.design_patterns;
 
 public interface MailHandler {
     void handle(MailInfo mailInfo);

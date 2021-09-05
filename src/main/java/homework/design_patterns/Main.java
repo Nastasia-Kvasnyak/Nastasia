@@ -1,4 +1,4 @@
-package design_patterns_nastasia;
+package homework.design_patterns;
 
 import com.github.javafaker.Faker;
 import homework.lab3.utils.RandomUtil;
@@ -10,9 +10,12 @@ public class Main {
         MailSender mailSender = new MailSender();
         Faker faker = new Faker();
         while (true){
-            MailInfo mailInfo = MailInfo.builder().content(faker.chuckNorris().fact()).
-                    mailType(RandomUtil.between(1,2)).build();
+            MailInfo mailInfo = MailInfo.builder()
+                    .mailType(RandomUtil.between(1,2))
+                    .content(faker.chuckNorris().fact())
+                    .build();
             mailSender.send(mailInfo);
+
             Thread.sleep(2000);
         }
     }
