@@ -1,21 +1,23 @@
 package homework.radio_alarm;
 
+import lombok.Setter;
+
+@Setter
 public class RadioAlarm {
 
+   private Radio radio = new RadioImpl();
+    private Alarm alarm = new AlarmImpl();
+
     public void a(){
-        RadioImpl radio = new RadioImpl();
         radio.a();
     }
     public void b(){
-        RadioImpl radio = new RadioImpl();
         radio.b();
     }
     public void c(){
-        AlarmImpl alarm = new AlarmImpl();
         alarm.c();
     }
     public void d(){
-        AlarmImpl alarm = new AlarmImpl();
         alarm.d();
     }
 
@@ -25,6 +27,9 @@ public class RadioAlarm {
         radioAlarm.b();
         radioAlarm.c();
         radioAlarm.d();
+        radioAlarm.setRadio(new RadioImpl2());
+        radioAlarm.a();
+        radioAlarm.b();
     }
 
 }
