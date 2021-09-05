@@ -1,34 +1,29 @@
 package homework.radio_alarm;
 
-public class RadioAlarm implements Radio,Alarm {
-    @Override
-    public void c() {
-        System.out.println("I am method c from world "+Alarm.class.getSimpleName());
-    }
+public class RadioAlarm {
 
-    @Override
-    public void d() {
-        System.out.println("I am method d from world "+Alarm.class.getSimpleName());
-    }
-
-    @Override
-    public void a() {
-        System.out.println("I am method a from world "+Radio.class.getSimpleName());
-    }
-
-    @Override
-    public void b() {
-        System.out.println("I am method b from world "+Radio.class.getSimpleName());
-    }
-    // a radio
-    // b radio
-    // c alarm
-    // d alarm
     public static void main(String[] args) {
         RadioAlarm radioAlarm = new RadioAlarm();
         radioAlarm.a();
         radioAlarm.b();
         radioAlarm.c();
         radioAlarm.d();
+    }
+
+    public void a(){
+        RadioImpl radio = new RadioImpl();
+        radio.a();
+    }
+    public void b(){
+        RadioImpl radio = new RadioImpl();
+        radio.b();
+    }
+    public void c(){
+        AlarmImpl alarm = new AlarmImpl();
+        alarm.c();
+    }
+    public void d(){
+        AlarmImpl alarm = new AlarmImpl();
+        alarm.d();
     }
 }
